@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/ejb-jar_3_1.xsd"
+         version="3.1">
+
+    <display-name>HelloEjb</display-name>
+
+    <enterprise-beans>
+
+        <session>
+
+            <ejb-name>FirstEJB</ejb-name>
+
+            <ejb-class>dao.CommodityClassficationDaoImpl</ejb-class>
+
+            <session-type>Stateless</session-type>
+
+            <transaction-type>Container</transaction-type>
+
+        </session>
+
+        <session>
+
+            <ejb-name>SecondEJB</ejb-name>
+
+            <ejb-class>dao.CommodityDaoImpl</ejb-class>
+
+            <session-type>Stateless</session-type>
+
+            <transaction-type>Container</transaction-type>
+
+        </session>
+
+        <session>
+
+            <ejb-name>ThirdEJB</ejb-name>
+
+            <ejb-class>dao.OrderDaoImpl</ejb-class>
+
+            <session-type>Stateless</session-type>
+
+            <transaction-type>Container</transaction-type>
+
+        </session>
+
+        <session>
+
+            <ejb-name>ForthEJB</ejb-name>
+
+            <ejb-class>dao.UserDaoImpl</ejb-class>
+
+            <session-type>Stateless</session-type>
+
+            <transaction-type>Container</transaction-type>
+
+        </session>
+
+    </enterprise-beans>
+
+</ejb-jar>
